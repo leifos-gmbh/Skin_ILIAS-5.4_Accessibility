@@ -2547,7 +2547,7 @@ output {
   padding-top: 4px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #333333;
 }
 .form-control {
   display: block;
@@ -2556,7 +2556,7 @@ output {
   padding: 3px 8px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555555;
+  color: #333333;
   background-color: white;
   background-image: none;
   border: 1px solid #CCCCCC;
@@ -3554,13 +3554,13 @@ tbody.collapse.in {
   clear: both;
   font-weight: normal;
   line-height: 1.42857143;
-  color: #4d4d4d;
+  color: #333333;
   white-space: nowrap;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
-  color: #262626;
+  color: #333333;
   background-color: #ecf0f4;
 }
 .dropdown-menu > .active > a,
@@ -3899,7 +3899,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #555555;
+  color: #333333;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #CCCCCC;
@@ -4033,7 +4033,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #333333;
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-bottom-color: transparent;
@@ -6754,7 +6754,7 @@ button.close {
 .il-counter-status {
   padding: 2px 4px;
   margin-top: 10px;
-  background-color: #999999;
+  background-color: #333333;
 }
 .glyph {
   color: #557196;
@@ -6844,7 +6844,7 @@ button.close {
   font-weight: normal;
   padding: 0;
   text-transform: uppercase;
-  color: #808080;
+  color: #333333;
 }
 .il-panel-listing-std-container > h3 {
   font-weight: normal;
@@ -6852,7 +6852,7 @@ button.close {
   margin: 8px 0 2px 0;
   font-size: 19px;
   text-transform: uppercase;
-  color: #808080;
+  color: #333333;
   float: left;
 }
 .il-panel-listing-std-container .dropdown {
@@ -6903,7 +6903,7 @@ button.close {
 }
 .il-card .caption dl dt {
   font-weight: normal;
-  color: #808080;
+  color: #333333;
   font-size: 12px;
   padding-top: 6px;
 }
@@ -6957,8 +6957,16 @@ button.close {
     display: flex;
     flex-direction: column;
   }
-  .row-eq-height .il-card :nth-child(4) {
+  .row-eq-height .il-card :last-child {
     flex-grow: 2;
+  }
+}
+/* see bug #25920, limit size of cards for small screens */
+@media (max-width: 768px) {
+  .il-card {
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 .il-deck .row {
@@ -7131,26 +7139,26 @@ fieldset[disabled] .btn-default.focus {
 }
 .btn-primary {
   color: white;
-  background-color: #6ea03c;
-  border-color: #6ea03c;
+  background-color: #557b2e;
+  border-color: #557b2e;
 }
 .btn-primary:focus,
 .btn-primary.focus {
   color: white;
-  background-color: #557b2e;
-  border-color: #2e4319;
+  background-color: #3b5620;
+  border-color: #151e0b;
 }
 .btn-primary:hover {
   color: white;
-  background-color: #557b2e;
-  border-color: #4f732b;
+  background-color: #3b5620;
+  border-color: #364e1d;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #557b2e;
-  border-color: #4f732b;
+  background-color: #3b5620;
+  border-color: #364e1d;
 }
 .btn-primary:active:hover,
 .btn-primary.active:hover,
@@ -7162,8 +7170,8 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: white;
-  background-color: #436124;
-  border-color: #2e4319;
+  background-color: #293c16;
+  border-color: #151e0b;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -7179,11 +7187,11 @@ fieldset[disabled] .btn-primary:focus,
 .btn-primary.disabled.focus,
 .btn-primary[disabled].focus,
 fieldset[disabled] .btn-primary.focus {
-  background-color: #6ea03c;
-  border-color: #6ea03c;
+  background-color: #557b2e;
+  border-color: #557b2e;
 }
 .btn-primary .badge {
-  color: #6ea03c;
+  color: #557b2e;
   background-color: white;
 }
 .btn.disabled,
@@ -7374,13 +7382,13 @@ hr.il-divider-with-label {
   font-size: 14px;
   line-height: 1.42857143;
   background-color: transparent;
-  color: #4d4d4d;
+  color: #333333;
   white-space: nowrap;
 }
 .dropdown-menu li > .btn:hover,
 .dropdown-menu li > .btn:focus {
   text-decoration: none;
-  color: #262626;
+  color: #333333;
   background-color: #ecf0f4;
 }
 .il-item {
@@ -7418,7 +7426,7 @@ hr.il-divider-with-label {
 }
 .il-item .il-item-property-value {
   font-size: 12px;
-  color: #808080;
+  color: #333333;
   overflow: hidden;
 }
 .il-item .col-sm-9 > .row {
@@ -7491,7 +7499,9 @@ hr.il-divider-with-label {
   float: none;
   zoom: 1;
   vertical-align: top;
-  width: auto;
+  /* using auto has issues on firefox, using calc(100%-45px) seems to have issues on IE,
+        see known issues at https://caniuse.com/#search=calc */
+  width: 100%;
 }
 .il-narrow-content .il-item .dropdown {
   position: static;
@@ -7714,7 +7724,9 @@ hr.il-divider-with-label {
 .icon.grpr .abbreviation,
 .icon.bdga .abbreviation,
 .icon.wfe .abbreviation,
-.icon.iass .abbreviation {
+.icon.iass .abbreviation,
+.icon.copa .abbreviation,
+.icon.lso .abbreviation {
   display: none;
 }
 .icon.grp {
@@ -8034,6 +8046,12 @@ hr.il-divider-with-label {
 }
 .icon.iass {
   background-image: url("images/icon_iass.svg");
+}
+.icon.copa {
+  background-image: url("images/icon_copa.svg");
+}
+.icon.lso {
+  background-image: url("images/icon_lso.svg");
 }
 .icon.outlined {
   filter: brightness(0);
@@ -8359,8 +8377,11 @@ hr.il-divider-with-label {
 .icon.outlined.iass {
   background-image: url("images/outlined/icon_iass.svg");
 }
-.icon.copa {
-  background-image: url("images/icon_copa.svg");
+.icon.outlined.copa {
+  background-image: url("images/outlined/icon_copa.svg");
+}
+.icon.outlined.lso {
+  background-image: url("images/outlined/icon_lso.svg");
 }
 .il-viewcontrol-mode .ilSubmitInactive,
 .il-viewcontrol-section .ilSubmitInactive,
@@ -8426,7 +8447,7 @@ ul.breadcrumb li:hover {
 .il-chart-scale-bar-item {
   font-size: 11px;
   padding: 1px 5px;
-  color: #808080;
+  color: #333333;
   text-align: center;
   background-color: #e0e0e0;
   text-overflow: ellipsis;
@@ -8836,7 +8857,7 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default:not(.disable
   border-color: rgba(0, 0, 0, 0.15);
 }
 .il-table-presentation-row .il-table-presentation-row-expanded .il-table-presentation-details .il-table-presentation-fields .il-item-property-name {
-  color: #808080;
+  color: #333333;
 }
 .il-workflow-header {
   margin-bottom: 8px;
@@ -8865,6 +8886,15 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default:not(.disable
 .il-workflow-container .il-workflow-step:last-child .text {
   border-left: none;
 }
+.il-workflow-container .il-workflow-step .text .il-workflow-step-label .btn-link,
+.il-workflow-container .il-workflow-step .text .il-workflow-step-description {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.il-workflow-container .il-workflow-step .text .il-workflow-step-description {
+  display: block;
+}
 .il-workflow-container .not-available:before,
 .il-workflow-container .no-longer-available:before {
   content: "\e033";
@@ -8879,7 +8909,7 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default:not(.disable
 }
 .il-workflow-container .not-available.in-progress .text span,
 .il-workflow-container .no-longer-available.in-progress .text span {
-  color: #333333;
+  color: #434343;
   opacity: .5;
 }
 .il-workflow-container .not-available .text,
@@ -8926,7 +8956,7 @@ fieldset[disabled] .il-table-presentation-viewcontrols .btn-default:not(.disable
   font-weight: 600;
 }
 .il-workflow-container .text {
-  border-left: 1px dashed #333333;
+  border-left: 1px dashed #434343;
   font-size: 14px;
   margin-left: 15px;
   padding: 0 0 30px 20px;
@@ -8948,7 +8978,7 @@ div.alert ul {
   background-color: white;
   padding: 6px 12px;
   font-size: 12px;
-  color: #808080;
+  color: #333333;
   list-style-type: none;
 }
 div.alert ul > li:before {
@@ -9355,7 +9385,7 @@ div.alert ul > li:before {
   padding: 8px 14px;
   background-color: transparent;
   text-transform: uppercase;
-  color: #808080;
+  color: #333333;
 }
 .il-popover.webui-popover-fixed {
   position: fixed;
@@ -9550,6 +9580,183 @@ div.alert ul > li:before {
 .bg-primary {
   color: white;
 }
+/*
+	These classes are used to limit the number of rows when displaying larger chunks of text.
+	The mixin receives @height-in-rows as an integer. The classes il-multi-line-cap-2,3,5,10
+	can be used to limit the number of rows for text to 2,3,5 or 10 lines in any template,
+	e.g. the Standard Listing Panels limit the property values to 3 lines using il-multi-line-cap-3
+
+	Technical discussion can be found in https://mantis.ilias.de/view.php?id=21583
+	The background/gradient fallback can be removed as soon as all browsers support line-clamp.
+ */
+.il-multi-line-cap-2 {
+  position: relative;
+  max-height: 3em;
+  overflow: hidden;
+  line-height: 1.5;
+  /* edge, chrome, safari go here... */
+  /* may come with next firefox 68, https://caniuse.com/#search=clamp */
+}
+.il-multi-line-cap-2:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 80%);
+}
+@supports (-webkit-line-clamp: 2) {
+  .il-multi-line-cap-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .il-multi-line-cap-2:after {
+    display: none;
+  }
+}
+@supports (-moz-line-clamp: 2) {
+  .il-multi-line-cap-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-line-clamp: 2;
+    -moz-box-orient: vertical;
+  }
+  .il-multi-line-cap-2:after {
+    display: none;
+  }
+}
+.il-multi-line-cap-3 {
+  position: relative;
+  max-height: 4.5em;
+  overflow: hidden;
+  line-height: 1.5;
+  /* edge, chrome, safari go here... */
+  /* may come with next firefox 68, https://caniuse.com/#search=clamp */
+}
+.il-multi-line-cap-3:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 80%);
+}
+@supports (-webkit-line-clamp: 2) {
+  .il-multi-line-cap-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .il-multi-line-cap-3:after {
+    display: none;
+  }
+}
+@supports (-moz-line-clamp: 2) {
+  .il-multi-line-cap-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-line-clamp: 3;
+    -moz-box-orient: vertical;
+  }
+  .il-multi-line-cap-3:after {
+    display: none;
+  }
+}
+.il-multi-line-cap-5 {
+  position: relative;
+  max-height: 7.5em;
+  overflow: hidden;
+  line-height: 1.5;
+  /* edge, chrome, safari go here... */
+  /* may come with next firefox 68, https://caniuse.com/#search=clamp */
+}
+.il-multi-line-cap-5:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 80%);
+}
+@supports (-webkit-line-clamp: 2) {
+  .il-multi-line-cap-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+  .il-multi-line-cap-5:after {
+    display: none;
+  }
+}
+@supports (-moz-line-clamp: 2) {
+  .il-multi-line-cap-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-line-clamp: 5;
+    -moz-box-orient: vertical;
+  }
+  .il-multi-line-cap-5:after {
+    display: none;
+  }
+}
+.il-multi-line-cap-10 {
+  position: relative;
+  max-height: 15em;
+  overflow: hidden;
+  line-height: 1.5;
+  /* edge, chrome, safari go here... */
+  /* may come with next firefox 68, https://caniuse.com/#search=clamp */
+}
+.il-multi-line-cap-10:after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 1.5em;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff 80%);
+}
+@supports (-webkit-line-clamp: 2) {
+  .il-multi-line-cap-10 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
+  .il-multi-line-cap-10:after {
+    display: none;
+  }
+}
+@supports (-moz-line-clamp: 2) {
+  .il-multi-line-cap-10 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-line-clamp: 10;
+    -moz-box-orient: vertical;
+  }
+  .il-multi-line-cap-10:after {
+    display: none;
+  }
+}
 /* flex grid support start, see http://www.bootply.com/126437 */
 /* deactivated flex grid, since grids in grids will not work correctly width:100%; and flex:1 1 auto; seem to be problems
 
@@ -9718,13 +9925,13 @@ span.ilAlert {
   font-size: 14px;
   line-height: 1.42857143;
   background-color: transparent;
-  color: #4d4d4d;
+  color: #333333;
   white-space: nowrap;
 }
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus {
   text-decoration: none;
-  color: #262626;
+  color: #333333;
   background-color: #ecf0f4;
 }
 .dropdown-menu img {
@@ -9831,7 +10038,7 @@ div.ilFrame {
   margin-left: 15px;
   overflow: auto;
   background-color: #f9f9f9;
-  border-right: 3px solid #878787;
+  border-right: 3px solid #979797;
   z-index: 100;
   position: fixed;
   top: 117px;
@@ -9847,7 +10054,7 @@ div.ilFrame {
   margin-left: 0;
   margin-right: 15px;
   border-right: none;
-  border-left: 3px solid #878787;
+  border-left: 3px solid #979797;
 }
 /* --------------------------------------------------------------
 	"Classic" delos part
@@ -10336,7 +10543,7 @@ div.il_info {
 }
 /* ---------------- headlines ------------------ */
 a#il_mhead_t_focus {
-  color: #6ea03c;
+  color: #557b2e;
   vertical-align: middle;
   font-size: 26px;
   cursor: default;
@@ -10363,7 +10570,7 @@ h3.ilHeader {
   margin: 0;
   display: inline;
   font-size: 19px;
-  color: #808080;
+  color: #909090;
   text-transform: uppercase;
 }
 #headerimage {
@@ -10832,7 +11039,7 @@ div.ilTopBar {
   padding: 5px 10px;
 }
 div.ilTopBar a {
-  color: #e5e5e5;
+  color: #333333;
 }
 div.ilTopBar a:hover,
 div.ilTopBar a:active,
@@ -10898,20 +11105,20 @@ div.ilSideBarContent {
   display: block;
   padding: 2px 4px;
   line-height: 1.5;
-  color: #4d4d4d;
+  color: #333333;
   background-color: transparent;
 }
 .ui-menu .ui-menu-item > *:hover,
 .ui-menu .ui-menu-item > *.ui-state-hover,
 .ui-menu .ui-menu-item > *.ui-state-active {
   background-color: #ecf0f4;
-  color: #4d4d4d;
+  color: #333333;
 }
 .ui-menu .ui-menu-item a {
-  color: #4d4d4d;
+  color: #333333;
 }
 .ui-menu .ui-menu-item a:hover {
-  color: #262626;
+  color: #333333;
 }
 .ui-menu .ui-menu-category {
   margin: 0;
@@ -10981,6 +11188,7 @@ img.ilSmallIcon {
 }
 span.ilIcalIcon {
   text-align: initial;
+  font-size: 133%;
 }
 /* Component Imports */
 /* Services/Accordion */
@@ -11834,9 +12042,9 @@ div.il_droparea {
 div.il_droparea:hover,
 div.ilCOPGDropActice,
 .il_droparea_valid_target {
-  border-color: #88be51;
-  color: #88be51;
-  background-color: #f3f8ed;
+  border-color: #6fa03c;
+  color: #6fa03c;
+  background-color: #d9eac8;
 }
 div.ilCOPGNoPageContent {
   padding: 20px 5px;
@@ -11869,7 +12077,7 @@ div.il_editarea_active {
   min-height: 20px;
 }
 div.il_editarea_selected {
-  border: 2px solid #6ea03c;
+  border: 2px solid #557b2e;
   min-height: 20px;
 }
 div.il_editarea_disabled_selected {
@@ -12131,7 +12339,7 @@ div.ilEditDeleted {
   border-color: #fa8228;
 }
 div.ilEditNew {
-  border-color: #6ea03c;
+  border-color: #557b2e;
 }
 .ilCOPGCompareLegend {
   display: inline-block;
@@ -12142,7 +12350,7 @@ span.ilDiffDel {
   background-color: #fdd9be;
 }
 span.ilDiffIns {
-  background-color: #bbda9b;
+  background-color: #a2cc76;
 }
 a.nostyle:link,
 a.nostyle:visited {
@@ -12192,7 +12400,7 @@ a.nostyle:hover {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  background-color: #3b5620;
+  background-color: #223112;
   color: white;
 }
 .ilCOPgEditStyleSelectionItem {
@@ -12319,7 +12527,7 @@ table.calmini {
   width: 100%;
   font-size: 90%;
   border-collapse: collapse;
-  background-color: #e8e8e8;
+  background-color: #f8f8f8;
   border: none;
 }
 table.calmini tr,
@@ -12329,7 +12537,7 @@ table.calmini th {
   padding: 5px 3px;
   text-align: center;
   vertical-align: middle;
-  color: #a6a6a6;
+  color: #b6b6b6;
   background-color: transparent;
 }
 @media only screen and (max-width: 991px) {
@@ -12358,7 +12566,7 @@ table.calmini td.calminitoday > .il_calmini_monthday > a {
 }
 table.calmini td.calminiprev > .il_calmini_monthday > a,
 table.calmini td.calmininext > .il_calmini_monthday > a {
-  color: #999999;
+  color: #a9a9a9;
   display: none;
 }
 a.callink:link,
@@ -12701,11 +12909,11 @@ li.ilWikiBlockItem {
 }
 #ilTopNav .dropdown-menu li a {
   background-color: transparent;
-  color: #4d4d4d;
+  color: #333333;
 }
 #ilTopNav .dropdown-menu li a:hover {
   background-color: #ecf0f4;
-  color: #262626;
+  color: #333333;
 }
 @media only screen and (max-width: 767px) {
   #ilTopNav .dropdown-menu {
@@ -12788,19 +12996,19 @@ li.ilWikiBlockItem {
     height: 40px;
     border-radius: 0;
     border-width: 0;
-    background-color: #666666;
-    color: #e5e5e5;
+    background-color: #333333;
+    color: #333333;
     margin: 0;
   }
 }
 @media only screen and (max-width: 767px) {
   #ilTopNav button.navbar-toggle .icon-bar {
-    background-color: #e5e5e5;
+    background-color: #333333;
   }
 }
 @media only screen and (max-width: 767px) {
   #ilTopNav button.navbar-toggle:hover {
-    background-color: #9e9e9e;
+    background-color: #333333;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -12908,20 +13116,20 @@ input.ilOpenIDBox {
   }
 }
 #ilTopBarNav .dropdown-menu {
-  background-color: #9e9e9e;
+  background-color: #333333;
   border-radius: 0;
   margin: 0;
-  color: #e5e5e5;
+  color: #333333;
 }
 #ilTopBarNav .dropdown-menu a {
   background-color: transparent;
-  color: #e5e5e5;
+  color: #333333;
 }
 #ilTopBarNav .dropdown-menu a:hover,
 #ilTopBarNav .dropdown-menu a:active,
 #ilTopBarNav .dropdown-menu a:focus {
   background-color: #ecf0f4;
-  color: #9e9e9e;
+  color: #333333;
 }
 #ilTopBarNav > li {
   float: left;
@@ -12936,8 +13144,8 @@ input.ilOpenIDBox {
   min-width: 40px;
   height: 40px;
   text-align: center;
-  background-color: #666666;
-  color: #e5e5e5;
+  background-color: #333333;
+  color: #333333;
 }
 #ilTopBarNav > li > a:hover,
 #ilTopBarNav > li > a:active,
@@ -12945,7 +13153,7 @@ input.ilOpenIDBox {
   outline: 0 none;
   color: white;
   text-decoration: none;
-  background-color: #9e9e9e;
+  background-color: #333333;
 }
 #ilTopBarNav > .active > a,
 #ilTopBarNav > .open > a,
@@ -12958,7 +13166,7 @@ input.ilOpenIDBox {
   outline: 0 none;
   color: white;
   text-decoration: none;
-  background-color: #9e9e9e;
+  background-color: #333333;
 }
 #ilTopBarNav #userlog > a {
   padding: 0 10px 0 0;
@@ -13106,8 +13314,8 @@ div.ilTopMemberView h3 {
 ul.il-mm-selfloading {
   width: 768px;
   list-style: none;
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 /* Services/UIComponent/Tabs */
 .nav-tabs > li {
@@ -13123,7 +13331,7 @@ ul.il-mm-selfloading {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  background-color: #7c7c7c;
+  background-color: #595959;
   color: white;
   border: 0 none;
 }
@@ -13135,7 +13343,7 @@ ul.il-mm-selfloading {
   padding: 0;
   margin: 7px 15px 23px;
   border: 0 none;
-  border-bottom: 2px solid #7c7c7c;
+  border-bottom: 2px solid #595959;
 }
 .ilSetupContent #ilTab {
   margin: 7px 0 23px;
@@ -13644,7 +13852,7 @@ th.ilSkillEntryHead {
   padding-bottom: 2px;
 }
 .ilSkillEvalItem.ilSkillEvalType3 {
-  border-color: #6ea03c;
+  border-color: #557b2e;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType1 {
   color: #dcb496;
@@ -13653,7 +13861,7 @@ th.ilSkillEntryHead {
   color: #21c5d8;
 }
 .ilSkillEvalItem > .row > .ilSkillEvalType3 {
-  color: #6ea03c;
+  color: #557b2e;
 }
 .ilSkillFilter .ilToolbar select.form-control {
   display: block;
@@ -13728,7 +13936,7 @@ img.ilPollQuestionImage {
 #ilTopBarNav .dropdown-menu #ilMMSearchMenu a:active,
 #ilTopBarNav .dropdown-menu #ilMMSearchMenu a:focus {
   background-color: transparent;
-  color: #e5e5e5;
+  color: #333333;
 }
 div.ilMainMenuSearch {
   padding: 0 10px 3px;
@@ -14139,14 +14347,28 @@ li.smallPad {
 .ilCrsObjAcc {
   margin-bottom: 10px;
 }
+.ilCourseObjectiveAccResults {
+  padding-top: 10px;
+}
+.ilCourseObjectiveAccResult {
+  font-size: 80%;
+}
+.ilCourseObjectiveAccSummary {
+  font-size: 120%;
+  padding-top: 15px;
+}
+.ilCourseObjectiveProgressBarContainer .text-comparision {
+  display: none;
+}
+.ilCourseObjectiveProgressBarContainer {
+  float: right;
+  max-width: 200px;
+  padding: 20px;
+}
 /* LOK progress bars */
 .ilCourseObjectiveProgressBar {
   padding-right: 5px;
   float: right;
-}
-.ilCourseObjectiveProgressBarContainer {
-  float: right;
-  padding-left: 10px;
 }
 .ilCourseObjectiveProgressBarContainer > .progress {
   margin: 5px 0 0;
@@ -14475,6 +14697,12 @@ div#ilContRepIntro img {
 .ilContainerTileRows .card-no-highlight {
   height: 0px;
 }
+.ilContainerTileRows .il-chart-progressmeter-container {
+  height: 100%;
+}
+.ilContainerTileRows .il-card h5 button.btn {
+  font-size: inherit;
+}
 .ilContainerShowMore {
   padding: 15px 10px;
   background-color: white;
@@ -14758,8 +14986,8 @@ td.ilBlockHeaderBig {
   padding: 3px 0;
   margin: 0 5px;
   text-align: left;
-  color: #595959;
-  border-bottom: 1px solid #cccccc;
+  color: #696969;
+  border-bottom: 1px solid #dcdcdc;
   /* box-shadow: 0 -2px 1px -1px white inset; no white lines */
 }
 div.ilBlockHeaderBig,
@@ -14795,7 +15023,7 @@ div.ilBlockContent {
   border-bottom: 1px solid #f0f0f0;
 }
 div.ilBlockPropertyCaption {
-  color: #595959;
+  color: #696969;
   font-style: italic;
 }
 /* Services/UIComponent/Lightbox */
@@ -14857,7 +15085,7 @@ div.ilInfoScreenSec h3.ilHeader {
 .il_InfoScreenProperty {
   padding: 15px;
   vertical-align: top;
-  color: #595959;
+  color: #696969;
   font-style: italic;
 }
 .il_InfoScreenPropertyValue {
@@ -15342,17 +15570,17 @@ span.ilNewsRssIcon:hover {
   padding: 10px 20px;
 }
 div.ilSurveyPageEditDropArea {
-  border-color: #88be51;
-  color: #88be51;
-  background-color: #aed389;
+  border-color: #6fa03c;
+  color: #6fa03c;
+  background-color: #95c564;
 }
 div.ilSurveyPageEditDropAreaSelected {
-  border-color: #88be51;
-  color: #88be51;
-  background-color: #94c564;
+  border-color: #6fa03c;
+  color: #6fa03c;
+  background-color: #7bb343;
 }
 div.ilSurveyPageEditAreaDragging {
-  border: 2px dashed #333333;
+  border: 2px dashed #434343;
   background-color: #f9f9f9;
   padding: 5px;
 }
@@ -15682,6 +15910,7 @@ body.ilPrtfPdfBody .ilPCMyCoursesToggle img {
 }
 #onscreenchat-container .popover {
   max-width: 200px;
+  min-height: 100px;
 }
 #onscreenchat-container .popover a {
   border: 1px solid white;
@@ -16875,6 +17104,8 @@ table.mceToolbar td {
 		External Blue: #21c5d8;
 		ILIAS 4 MainMenu Color: #c8e6ff;
 */
+/*Less Variablen - Barrierefreiheit*/
+/*Less Variablen - Standard*/
 /** if left unchanged, you have to copy all the background images to your skin/images folder.
 * To use the delos background images in your skin,
 * please change this value (in custom less data or in variables.less of your custom skin) to "../../../../templates/default/images/"
@@ -16903,7 +17134,7 @@ table.mceToolbar td {
   background-color: #C25705;
 }
 .il-counter-status {
-  background-color: #333;
+  background-color: #333333;
 }
 #ilTopBarNav > li > a {
   color: white;
@@ -16912,21 +17143,27 @@ table.mceToolbar td {
   background-color: white;
 }
 #ilTopBarNav .dropdown-menu a {
-  color: #727272;
+  color: #333333;
 }
 #ilTopBarNav .dropdown-menu a:hover,
 #ilTopBarNav .dropdown-menu a:active,
 #ilTopBarNav .dropdown-menu a:focus {
-  color: #727272;
+  color: #333333;
+}
+#ilTopBarNav > li > a:hover,
+#ilTopBarNav > li > a:active,
+#ilTopBarNav > li > a:focus {
+  color: #333333;
+  background-color: #f9f9f9;
 }
 /*MAIN MENU*/
 #ilTopNav .navbar-nav > li > a {
-  color: #727272;
+  color: #333333;
 }
 #ilTopNav .navbar-nav > li > a:hover,
 #ilTopNav .navbar-nav > li > a:active,
 #ilTopNav .navbar-nav > li > a:focus {
-  color: #727272;
+  color: #333333;
 }
 #ilTopNav .navbar-nav > .active > a,
 #ilTopNav .navbar-nav > .open > a,
@@ -16936,10 +17173,14 @@ table.mceToolbar td {
 #ilTopNav .navbar-nav > .open > a:active,
 #ilTopNav .navbar-nav > .active > a:focus,
 #ilTopNav .navbar-nav > .open > a:focus {
-  color: #727272;
+  color: #333333;
 }
 .dropdown-header {
-  color: #4d4d4d;
+  color: #333333;
+  background-color: #f9f9f9;
+}
+#ilTopNav .dropdown-menu {
+  background-color: white;
 }
 /*----------GENERAL ADJUSTMENTS----------*/
 body {
@@ -16949,46 +17190,68 @@ body {
   color: #DB0000;
 }
 .il-card .caption dl dt {
-  color: #727272;
+  color: #333333;
 }
 .il_InfoScreenPropertyValue {
   border: none !important;
 }
 .light {
-  color: #727272;
+  color: #333333;
 }
 .ilToolbar li.ilToolbarSeparator {
   border-left: 1px solid #ccc;
 }
 .navbar-default .navbar-text {
-  color: #727272;
+  color: #333333;
+}
+.il_InfoScreenProperty {
+  color: #333333;
+}
+a:hover {
+  color: #333333;
 }
 /*HEADING*/
 h3.ilHeader {
-  color: #727272;
+  color: #333333;
 }
 div.ilHeaderDesc {
-  color: #727272;
+  color: #333333;
+}
+div.ilBlockHeader,
+div.ilBlockHeaderBig,
+td.ilBlockHeader,
+td.ilBlockHeaderBig {
+  color: #333333;
 }
 /*TAB NAVIGATION*/
 #ilTab {
-  border-bottom: 2px solid #727272;
+  border-bottom: 2px solid #333333;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  background-color: #727272;
+  background-color: #333333;
+}
+.nav-tabs > li > a:hover {
+  border-color: #f9f9f9;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #f9f9f9;
+}
+#ilSubTab > li > a:hover {
+  color: #333333;
 }
 /*PANEL*/
 .il-panel-listing-std-container > h3 {
-  color: #727272;
+  color: #333333;
 }
 /*SIDE BLOCKS*/
 div.ilBlockInfo {
-  color: #727272;
+  color: #333333;
 }
 .ilPollDescription {
-  color: #727272;
+  color: #333333;
 }
 span.ilNewsRssIcon {
   background-color: #C25705;
@@ -17000,21 +17263,24 @@ span.ilNewsRssIcon:hover {
 /*ALERTS*/
 .alert-success {
   background-color: #EDFFE5;
-  border-color: #d6e9c6;
+  border: none;
   color: #356836;
 }
 .alert-danger {
   background-color: #f2dede;
-  border-color: #ebccd1;
+  border: none;
   color: #9d4543 !important;
 }
 .alert-info {
   background-color: #E0F5FF;
-  border-color: #bce8f1;
+  border: none;
   color: #245368;
 }
 .alert-info a {
   color: #245368;
+}
+.alert-warning {
+  border: none;
 }
 span.il_ItemAlertProperty {
   color: #C25705;
@@ -17026,13 +17292,9 @@ span.ilAlert {
   color: #C25705;
 }
 /*BUTTONS*/
-.btn-primary {
-  background-color: #52752C;
-  border-color: #52752C;
-}
 .btn-primary:hover {
-  background-color: #3F5B22;
-  border-color: #3F5B22;
+  background-color: #3b5620 !important;
+  border-color: #3b5620 !important;
 }
 .btn-default {
   background-color: #5E748E;
@@ -17073,7 +17335,7 @@ div.ilTableOuter {
   background-color: #f9f9f9;
 }
 span.ilTableFootLight {
-  color: #727272;
+  color: #333333;
 }
 div.ilTableFilterLabel {
   font-style: italic;
@@ -17085,7 +17347,7 @@ div.ilTableFilterLabel {
 }
 .ilFormHeader,
 .ilFormFooter {
-  color: #727272;
+  color: #333333;
 }
 .form-group {
   margin: 0px !important;
@@ -17098,7 +17360,10 @@ div.ilTableFilterLabel {
   border-left: 10px solid white;
 }
 .form-horizontal .help-block {
-  color: #727272;
+  color: #333333;
+}
+.form-horizontal label {
+  color: #333333;
 }
 /*----------ILIAS OBJECTS AND SERVICES----------*/
 /*TREE*/
@@ -17113,7 +17378,7 @@ a.il_HighlightedNode,
 /*BLOG*/
 div.ilBlogListItemSubTitle {
   margin-top: 5px;
-  color: #727272;
+  color: #333333;
 }
 /*MEDIACAST*/
 .ilPlayerPreviewDescription {
@@ -17148,15 +17413,32 @@ table.calmini td.calminitoday {
 table.calmini tr,
 table.calmini td,
 table.calmini th {
-  color: #727272;
+  color: #333333;
 }
 .calheader {
-  color: #727272;
+  color: #333333;
 }
 table.calstd {
-  color: #727272;
+  color: #333333;
 }
 /*OBJECT LIST*/
 .ilObjListRow {
   background-color: #f9f9f9;
+}
+#ilTopNav .navbar-nav > li > a:focus {
+  outline: 1px dotted #333333;
+}
+a.ilTreeView {
+  top: 130px;
+}
+.ilLeftNav {
+  padding: 13px 5px 5px 5px;
+}
+/*Farbanpassungen aufgrund zu geringer Kontraste*/
+/*
+-gewünscht ist ein Kontrast von 4,5 zu 1
+-Der Kontrast kann auf folgender Seite getestet werden: https://webaim.org/resources/contrastchecker/
+*/
+.alert {
+  margin-top: 20px;
 }

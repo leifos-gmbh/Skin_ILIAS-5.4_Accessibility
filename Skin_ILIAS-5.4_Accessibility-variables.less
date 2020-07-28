@@ -12,8 +12,13 @@
 		ILIAS 4 MainMenu Color: #c8e6ff;
 */
 
+/*Less Variablen - Barrierefreiheit*/
+@gray:		#333333;
+@background-color:		#f9f9f9;
+
+/*Less Variablen - Standard*/
 @brand-primary:		#4c6586;
-@brand-secondary:		#6ea03c;
+@brand-secondary:		#557b2e;
 @brand-success:		#6ea03c;
 @brand-info:		#dcb496;
 @brand-warning:		#fa8228;
@@ -31,7 +36,6 @@
 */
 @web-font-path:		"fonts/";
 
-@mid-gray:		#333333;
 @il-primary-container-bg:		white;
 @il-secondary-container-bg:		#f9f9f9;
 
@@ -92,8 +96,8 @@
 //
 //##
 @body-bg:		#ffffff;
-@text-color:		@gray-dark;
-@il-light-text-color:		lighten(@mid-gray, 30%);
+@text-color:		@gray;
+@il-light-text-color:		@gray;
 @link-color:		lighten(@brand-primary, 5%);
 @link-hover-color:		darken(@link-color, 15%);
 
@@ -129,7 +133,7 @@
 @list-group-bg:		white;
 
 @panel-bg:		@il-secondary-container-bg;
-@panel-primary-text:		@gray-dark;
+@panel-primary-text:		@gray;
 
 @carousel-control-color:		white;
 @carousel-indicator-active-bg:		white;
@@ -194,23 +198,23 @@
 //
 //## Variables to control the header (Top Navigation and Main menu) section of ILIAS.
 //** controls background color of the "topbar" (that gray thingy on top of the page in the standard).
-@il-top-bar-bg:		@mid-gray;
+@il-top-bar-bg:		@gray;
 //** controls text color of the "topbar" (the title of the ILIAS Installation)
 @il-top-bar-color:		white;
 //** controls height of the "topbar"
 @il-top-bar-height:		40px;
 //** controls colors and bg colors of the "topbar" buttons
-@il-top-bar-link-bg:		lighten(@mid-gray, 20%);
-@il-top-bar-link-color:		lighten(@mid-gray, 70%);
-@il-top-bar-link-hover-bg:		lighten(@mid-gray, 42%);
+@il-top-bar-link-bg:		@gray;
+@il-top-bar-link-color:		@gray;
+@il-top-bar-link-hover-bg:		@gray;
 @il-top-bar-link-hover-color:		white;
 //** controls colors and bg colors of the "topbar" dropdowns
-@il-top-bar-dropdown-bg:		lighten(@mid-gray, 42%);
-@il-top-bar-dropdown-color:		lighten(@mid-gray, 70%);
+@il-top-bar-dropdown-bg:		@gray;
+@il-top-bar-dropdown-color:		@gray;
 @il-top-bar-dropdown-link-bg:		transparent;
-@il-top-bar-dropdown-link-color:		lighten(@mid-gray, 70%);
+@il-top-bar-dropdown-link-color:		@gray;
 @il-top-bar-dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
-@il-top-bar-dropdown-link-hover-color:		lighten(@mid-gray, 42%);
+@il-top-bar-dropdown-link-hover-color:		@gray;
 //** controls the height of the "logo" (that [ILIAS] thingy on top the page in the standard).
 @il-logo-height:		50px;
 //** controls the width of the "logo" (that [ILIAS] thingy on top the page in the standard).
@@ -246,8 +250,8 @@
 @il-main-menu-link-hover-bg:		transparent;
 @il-main-menu-link-active-bg:		#fafafa;
 @il-main-menu-dropdown-bg:		#fafafa;
-@il-main-menu-dropdown-link-color:		lighten(@mid-gray, 10%);
-@il-main-menu-dropdown-link-hover-color:		darken(@gray-dark, 5%);
+@il-main-menu-dropdown-link-color:		@gray;
+@il-main-menu-dropdown-link-hover-color:		@gray;
 @il-main-menu-dropdown-link-bg:		transparent;
 @il-main-menu-dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
 @il-main-menu-dropdown-header-bg:		#f3f3f3;
@@ -459,11 +463,11 @@
 @panel-inner-border:		#ddd;
 @panel-footer-bg:		#f5f5f5;
 
-@panel-default-text:		@gray-dark;
+@panel-default-text:		@gray;
 @panel-default-border:		none;
 @panel-default-heading-bg:		@il-secondary-container-bg;
 
-@panel-primary-text:		@gray-dark;
+@panel-primary-text:		@gray;
 @panel-primary-border:		none;
 @panel-primary-heading-bg:		@il-primary-container-bg;
 
@@ -471,8 +475,8 @@
 //
 //##
 @dropdown-bg:		white;
-@dropdown-link-color:		lighten(@mid-gray, 10%);
-@dropdown-link-hover-color:		darken(@gray-dark, 5%);
+@dropdown-link-color:		@gray;
+@dropdown-link-hover-color:		@gray;
 @dropdown-link-bg:		transparent;
 @dropdown-link-hover-bg:		lighten(@brand-primary, 53%);
 @dropdown-header-bg:		#f3f3f3;
@@ -565,7 +569,7 @@
 //== Status Counter
 //
 //##
-@il-counter-status-bg:		lighten(@mid-gray, 40%);
+@il-counter-status-bg:		@gray;
 @il-counter-status-margin-top:		10px;
 
 
