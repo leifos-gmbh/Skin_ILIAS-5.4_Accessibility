@@ -1,6 +1,6 @@
 # Accessibility Skin
 
-This skin enhances the accessibilty of ILIAS by
+This skin enhances the accessibility of ILIAS by
 - Increasing general contrast of the elements.
 - Improve tab focus presentation.
 - Move form alerts to the top of properties.
