@@ -11,6 +11,10 @@
   display: none;
 }
 
-:focus {
+:focus, .btn-file:focus-within {
   outline: 2px dashed @brand-warning !important;
+}
+
+.btn:focus {
+  outline-offset: 0 !important;
 }

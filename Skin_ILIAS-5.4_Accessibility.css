@@ -17558,6 +17558,10 @@ a.ilTreeView {
 .input-group.date > span.input-group-addon {
   display: none;
 }
-:focus {
+:focus,
+.btn-file:focus-within {
   outline: 2px dashed #fa8228 !important;
+}
+.btn:focus {
+  outline-offset: 0 !important;
 }
