@@ -37,6 +37,17 @@
     color: @gray;
     background-color: @background-color;
 }
+#ilTopBarNav > .active > a,
+#ilTopBarNav > .open > a,
+#ilTopBarNav > .active > a:hover,
+#ilTopBarNav > .open > a:hover,
+#ilTopBarNav > .active > a:active,
+#ilTopBarNav > .open > a:active,
+#ilTopBarNav > .active > a:focus,
+#ilTopBarNav > .open > a:focus {
+    color: #333;
+    background-color: white;
+  }
 
 /*MAIN MENU*/
 #ilTopNav .navbar-nav > li > a {
@@ -56,6 +67,7 @@
 #ilTopNav .navbar-nav > .active > a:focus,
 #ilTopNav .navbar-nav > .open > a:focus {
     color: @gray;
+    border-top: 4px solid #fafafa;
 }
 .dropdown-header {
     color: @gray;

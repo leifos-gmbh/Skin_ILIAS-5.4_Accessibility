@@ -17156,6 +17156,17 @@ table.mceToolbar td {
   color: #333333;
   background-color: #f9f9f9;
 }
+#ilTopBarNav > .active > a,
+#ilTopBarNav > .open > a,
+#ilTopBarNav > .active > a:hover,
+#ilTopBarNav > .open > a:hover,
+#ilTopBarNav > .active > a:active,
+#ilTopBarNav > .open > a:active,
+#ilTopBarNav > .active > a:focus,
+#ilTopBarNav > .open > a:focus {
+  color: #333;
+  background-color: white;
+}
 /*MAIN MENU*/
 #ilTopNav .navbar-nav > li > a {
   color: #333333;
@@ -17174,6 +17185,7 @@ table.mceToolbar td {
 #ilTopNav .navbar-nav > .active > a:focus,
 #ilTopNav .navbar-nav > .open > a:focus {
   color: #333333;
+  border-top: 4px solid #fafafa;
 }
 .dropdown-header {
   color: #333333;
@@ -17430,7 +17442,77 @@ table.calstd {
 }
 :focus,
 .btn-file:focus-within {
-  outline: 2px solid #fa8228 !important;
+  outline: 4px solid #fa8228 !important;
+}
+.btn-default:focus,
+.btn-default.focus {
+  color: #4c6586;
+  background-color: white;
+  border-color: white;
+  outline: 4px solid #4c6586;
+}
+.btn-default:hover {
+  color: #4c6586;
+  background-color: white;
+  border-color: white;
+  outline: 4px solid #4c6586;
+}
+btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #4c6586;
+  background-color: white;
+  border-color: white;
+  outline: 4px solid #4c6586;
+}
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+  color: #4c6586;
+  background-color: white;
+  border-color: white;
+  outline: 4px solid #4c6586;
+}
+.btn-primary:focus,
+.btn-primary.focus {
+  color: #3b5620;
+  background-color: white;
+  border-color: white;
+  outline: 4px solid #3b5620;
+}
+.btn-primary:hover {
+  color: #3b5620;
+  background-color: white !important;
+  border-color: white !important;
+  outline: 4px solid #3b5620;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: #3b5620;
+  background-color: white;
+  border-color: white;
+  outline: 4px solid #3b5620;
+}
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus {
+  color: #3b5620;
+  background-color: white;
+  border-color: white;
+  outline: 4px solid #3b5620;
 }
 .btn:focus {
   outline-offset: 0 !important;
@@ -17447,5 +17529,5 @@ a.ilTreeView {
 -Der Kontrast kann auf folgender Seite getestet werden: https://webaim.org/resources/contrastchecker/
 */
 .alert {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
