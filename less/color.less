@@ -12,7 +12,7 @@
 }
 /*TOP BAR*/
 .il-counter-novelty {
-    background-color: #C25705;
+    background-color: @brand-warning;
 }
 .il-counter-status {
     background-color: @gray
@@ -45,9 +45,12 @@
 #ilTopBarNav > .open > a:active,
 #ilTopBarNav > .active > a:focus,
 #ilTopBarNav > .open > a:focus {
-    color: #333;
+    color: @gray;
     background-color: white;
   }
+div.ilTopBar a {
+    color: white;
+}
 
 /*MAIN MENU*/
 #ilTopNav .navbar-nav > li > a {
@@ -149,11 +152,11 @@ div.ilBlockInfo {
     color: @gray;
 }
 span.ilNewsRssIcon {
-    background-color: #C25705;
+    background-color: @brand-warning;
 }
 span.ilNewsRssIcon:hover {
     text-decoration: underline;
-    background-color: #C25705;
+    background-color: @brand-warning;
 }
 /*ALERTS*/
 .alert-success {
@@ -178,32 +181,18 @@ span.ilNewsRssIcon:hover {
     border: none;
 }
 span.il_ItemAlertProperty {
-    color: #C25705;
+    color: @brand-warning;
 }
 div.ilHeaderAlert {
-    color: #C25705;
+    color: @brand-warning;
 }
 span.ilAlert {
-    color: #C25705;
+    color: @brand-warning;
 }
 /*BUTTONS*/
-.btn-primary:hover {
-    background-color: darken(@brand-secondary, 10%) !important;
-    border-color: darken(@brand-secondary, 10%) !important;
-}
 .btn-default {
-    background-color: #5E748E;
-    border-color: #5E748E;
-}
-.btn-default:hover {
-    background-color: #3B4F68;
-    border-color: #3B4F68;
-}
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-    background-color: #3B4F68;
-    border-color: #3B4F68;
+    background-color: @brand-primary;
+    border-color: @brand-primary;
 }
 .btn.disabled,
 .btn[disabled],
@@ -258,6 +247,9 @@ div.ilTableFilterLabel {
 .form-horizontal label {
     color: @gray;
 }
+.form-control {
+    border: 1px solid lighten(@gray, 15%);
+}
 
 /*----------ILIAS OBJECTS AND SERVICES----------*/
 /*TREE*/
@@ -301,7 +293,7 @@ a.ilTag:hover, a.ilTag:active {
 }
 /*CALENDAR*/
 table.calmini td.calminitoday {
-    background-color: #C25705;
+    background-color: @brand-warning;
 }
 table.calmini tr, table.calmini td, table.calmini th {
     color: @gray;

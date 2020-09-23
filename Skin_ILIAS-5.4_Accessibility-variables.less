@@ -12,7 +12,7 @@
 		ILIAS 4 MainMenu Color: #c8e6ff;
 */
 
-/*Less Variablen - Barrierefreiheit*/
+/*Less Variables - Accessibility*/
 @gray:		#333333;
 @background-color:		#f9f9f9;
 
@@ -21,8 +21,8 @@
 @brand-secondary:		#557b2e;
 @brand-success:		#6ea03c;
 @brand-info:		#dcb496;
-@brand-warning:		#fa8228;
-@brand-danger:		#fa8228;
+@brand-warning:		#B95304;
+@brand-danger:		#B95304;
 
 /** if left unchanged, you have to copy all the background images to your skin/images folder.
 * To use the delos background images in your skin,
@@ -291,9 +291,9 @@
 //** Text color of the primary button (most important button on the screen)
 @il-btn-primary-color:		white;
 //** Background color of the primary button (most important button on the screen)
-@il-btn-primary-bg:		@brand-secondary;
+@il-btn-primary-bg:		darken(@brand-secondary, 10%);
 //** Border color of the primary button (most important button on the screen)
-@il-btn-primary-border:		@brand-secondary;
+@il-btn-primary-border:		darken(@brand-secondary, 10%);
 
 //** Text color of inactive buttons
 @il-disabled-btn-color:		white;
