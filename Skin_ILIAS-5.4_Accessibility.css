@@ -17460,6 +17460,7 @@ table.calstd {
 :focus,
 .btn-file:focus-within {
   outline: 4px solid #B95304 !important;
+  outline-offset: 0px !important;
 }
 .btn-default {
   margin-right: 2px;
